@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quail Board &mdash; Mikroelektronika Quail Board 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/zerynth.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Mikroelektronika Quail Board 1.0.0 documentation" href="#"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="#" class="fa fa-home"> Mikroelektronika Quail Board</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Quail Board</a><ul>
+<li><a class="reference internal" href="#zerynth-pin-mapping-and-associated-features">ZERYNTH Pin Mapping and Associated Features</a></li>
+<li><a class="reference internal" href="#board-summary">Board Summary</a></li>
+<li><a class="reference internal" href="#connect-virtualize-and-program">Connect, Virtualize and Program</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Mikroelektronika Quail Board</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>Quail Board</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="quail-board">
+<span id="mikroe-quail"></span><h1>Quail Board<a class="headerlink" href="#quail-board" title="Permalink to this headline">¶</a></h1>
+<p>The Quail board is an STM32-powered development solution for building hardware prototypes with Mikroelektronika click boards. Hardware-wise, Quail has 4 mikroBUS™ sockets for click board connectivity, along with 24 screw terminals for connecting additional electronics and two USB ports (one for programming, the other for external mass storage). The board runs on a 5V power supply. It features a STM32F427 MCU running at 168MHz with 192Kb of RAM and 2MB of flash and additional 8Mb of spi flash. Quail is produced by MikroElektronika, but the idea and design of the board was done by <a class="reference external" href="https://mikrobusnet.org">MikroBUS.NET</a>, a team of software and hardware professionals from France.</p>
+<div class="figure align-center" style="width: 400px">
+<img alt="Quail Board" src="_images/quail_board.png" />
+</div>
+<div class="section" id="zerynth-pin-mapping-and-associated-features">
+<h2>ZERYNTH Pin Mapping and Associated Features<a class="headerlink" href="#zerynth-pin-mapping-and-associated-features" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" style="width: 700px">
+<img alt="Quail Board Pin Map" src="_images/quail_board_pin.png" />
+</div>
+</div>
+<div class="section" id="board-summary">
+<h2>Board Summary<a class="headerlink" href="#board-summary" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Microcontroller: ARM 32-bit Cortex™-M4 CPU Core</li>
+<li>Operating Voltage: 3.3V</li>
+<li>Input Voltage: 3.6-6V</li>
+<li>Digital I/O Pins (DIO): 66</li>
+<li>Analog Input Pins (ADC): 10</li>
+<li>UARTs: 5</li>
+<li>SPIs: 2</li>
+<li>I2Cs: 2</li>
+<li>Flash Memory: 2Mb</li>
+<li>SRAM: 192 KB + 64Kb CCM</li>
+<li>Clock Speed: 168Mhz</li>
+</ul>
+</div>
+<div class="section" id="connect-virtualize-and-program">
+<h2>Connect, Virtualize and Program<a class="headerlink" href="#connect-virtualize-and-program" title="Permalink to this headline">¶</a></h2>
+<p>On Windows machines two set of drivers must be installed: the DFU drivers and the Usb serial drivers. This can be done by using the <a class="reference external" href="http://zadig.akeo.ie/">Zadig utility</a> version 2.2 or greater. Use the Zadig utility once with the Quail in DFU mode (see below) and once after the board has been virtualized.  Remember to select &#8220;Options &gt; List all devices&#8221; to search for the Quail device. In DFU mode, the VID:PID you should see is 0483:DF11 and the Quail si recognized as &#8220;STM32 BOOTLOADER&#8221;. For the virtualized Quail the VID:PID is 0483:DF12. In DFU mode any driver is ok, except Usb CDC; for the virtualized Quail the only valid driver is Usb CDC.</p>
+<div class="figure align-center" id="id1" style="width: 400px">
+<img alt="DFU drivers for Quail" src="_images/zadig_dfu.png" />
+<p class="caption"><span class="caption-text">Installation of DFU drivers for Quail (in boot mode)</span></p>
+</div>
+<div class="figure align-center" id="id2" style="width: 400px">
+<img alt="Serial Usb drivers (CDC) for Quail" src="_images/zadig_usb.png" />
+<p class="caption"><span class="caption-text">Installation of Serial Usb drivers for Quail (virtualized)</span></p>
+</div>
+<p>It could be necessary to temporarily disable the digitally signed driver enforcement policy of Windows to allow the driver installation. There are good instructions on how to do that in <a class="reference external" href="http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/">this guide</a>.</p>
+<p>On MAC OS X and Linux USB drivers are not required.</p>
+<p>In Linux however the following udev rules may need to be added:</p>
+<div class="highlight-python"><div class="highlight"><pre>#Mikroe Quail Board
+SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;0483&quot;, ATTRS{idProduct}==&quot;df11&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+SUBSYSTEMS==&quot;tty&quot;, ATTRS{idVendor}==&quot;0483&quot;, ATTRS{idProduct}==&quot;df12&quot;, MODE=&quot;0666&quot;, GROUP=&quot;users&quot;, ENV{ID_MM_DEVICE_IGNORE}=&quot;1&quot;
+</pre></div>
+</div>
+<p>Once connected to a USB port the Quail can be seen as a Virtual Serial port or as a DFU device depending on its virtualized/virtualizable status and it is automatically recognized by the ZERYNTH Studio.</p>
+<p>To <strong>virtualize</strong> the Quail or to update the ZERYNTH VM installed on it, it is necessary to put the Quail in DFU Mode (Device Firmware Upgrade).Follow these steps to virtualize the Quail:</p>
+<ul class="simple">
+<li>Hold down BOTH buttons (reset and boot)</li>
+<li>Release only the reset button, while holding down the boot button</li>
+<li>After a second, release the boot button</li>
+<li>The Quail is now in DFU mode</li>
+<li>Select the virtualizable Quail on the Board Management Toolbar and click virtualize</li>
+</ul>
+<p>Follow these steps to <strong>upload</strong> a ZERYNTH script on a virtualized Quail:</p>
+<ul class="simple">
+<li>Select the virtualized Quail on the Board Bar List</li>
+<li>Click upload</li>
+<li>Reset the Quail by pressing the reset button when asked</li>
+</ul>
+<p>ZERYNTH overwrites the original Quail firmware. ZERYNTH Studio is able to <strong>restore</strong> the original firmware on the Quail from the virtualize dialog:</p>
+<ul class="simple">
+<li>Put the Quail in DFU mode</li>
+<li>Select the Quail on the Board Management Toolbar and click virtualize</li>
+<li>From the dialog choose Restore Original Firmware</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright ZERYNTH Team.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ <script type="text/javascript">
+ var vurl
+ if(location.href.indexOf("127.0.0.1")>=0) vurl=location.protocol+"//"+location.host+"/docs"
+ else vurl="http://doc.zerynth.com"
+ $(document).ready(function(){
+                   $('.wy-breadcrumbs a:contains("Docs")').before('<a href="'+vurl+'">Zerynth</a> &#187;')
+                   $('.wy-side-nav-search > a').removeClass("fa-home").removeClass("fa")
+                   $('.wy-side-nav-search').prepend('<div class="viper-circle"><a href="'+vurl+'"><span style="color:#1c5e60" class="zerynth-Logo2"></span></a></div>')
+ })
+ </script>
+
+
+</body>
+</html>

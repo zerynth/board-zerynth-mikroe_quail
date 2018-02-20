@@ -1,0 +1,34 @@
+{
+    "name":"MikroElektronika Quail",
+    "target":"mikroe_quail",
+    "cc":"armgcc",
+    "classes":["mikroe_quail.MikroeQuail","mikroe_quail_dfu.MikroeQuailDFU"],
+    "ram":196,
+    "flash":2048,
+    "family_type":"armcmx",
+    "family_name":"stm32f4",
+    "chip_model":"stm32f427",
+    "manual_reset": 1,
+    "preferred_baud":115200,
+    "board_producer":"MikroElektronika",
+    "chip_manifacturer":"STM",
+    "architecture":"cortex-m4",
+    "gccopts":{
+        "cflags": ["-mcpu=cortex-m4","-mthumb", "-O2","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99"],
+        "defs": ["STM32F42X","STM32F427_437xx","VM_DEFAULT_THREAD_SIZE=1024"]
+    },
+    "relocator":"cortex-m",
+    "type":"board",
+    "virtualizable":"MikroeQuailDFU",
+    "has_alter_ego":"MikroeQuail",
+    "uplink_reset": true,
+    "reset_time":2000,
+    "connection":{
+        "baudrate":115200,
+        "parity":"n",
+        "bytesize":8,
+        "stopbits":1,
+        "dsrdtr":false,
+        "rtscts":false
+    }
+}

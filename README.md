@@ -1,1 +1,0 @@
-# board-zerynth-mikroe_quail

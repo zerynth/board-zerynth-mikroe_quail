@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "sys.zerynth.armgcc": "r2.0.11",
+        "sys.zerynth.dfu": "r2.0.11",
+        "vhal.zerynth.armcmx_stm32f4": "r2.0.11"
+    },
+    "description": "Add support for Quail board",
+    "fullname": "board.zerynth.mikroe_quail",
+    "git_pointer": "zerynth://zerynth-boards/mikroe_quail",
+    "info": {
+        "board": "MikroElektronika Quail",
+        "chip_manufacturer": "ST Microelectronics",
+        "device": "stm32f427",
+        "family_type": "ARM Cortex M4"
+    },
+    "keywords": [
+        "board",
+        "mikroe",
+        "stm"
+    ],
+    "repo": "official",
+    "title": "Quail Board Support Package",
+    "version": "r2.0.11",
+    "whatsnew": ""
+}
