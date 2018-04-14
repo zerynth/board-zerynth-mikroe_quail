@@ -1,8 +1,8 @@
 {
     "dependencies": {
-        "sys.zerynth.armgcc": "r2.1.0",
-        "sys.zerynth.dfu": "r2.1.0",
-        "vhal.zerynth.armcmx_stm32f4": "r2.1.0"
+        "sys.zerynth.armgcc": "r2.1.1",
+        "sys.zerynth.dfu": "r2.1.1",
+        "vhal.zerynth.armcmx_stm32f4": "r2.1.1"
     },
     "description": "Add support for Quail board",
     "fullname": "board.zerynth.mikroe_quail",
@@ -20,6 +20,6 @@
     ],
     "repo": "official",
     "title": "Quail Board Support Package",
-    "version": "r2.1.0",
+    "version": "r2.1.1",
     "whatsnew": ""
 }
