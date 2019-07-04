@@ -1,0 +1,14 @@
+---
+description: Add support for Quail board
+fullname: board.zerynth.mikroe_quail
+info:
+    board: MikroElektronika Quail
+    chip_manufacturer: ST Microelectronics
+    device: stm32f427
+    family_type: ARM Cortex M4
+keywords:
+- board
+- mikroe
+- stm
+title: Quail Board Support Package
+...
